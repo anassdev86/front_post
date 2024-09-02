@@ -1,13 +1,97 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding:0;
+  box-sizing: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+@media screen and (max-width: 600px) {
+  html{ font-size: 55%;}
+}
+
+body{
+  box-sizing: border-box;
+  font-family: "Noto Serif", serif;
+}
+
+.content_cardlist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 1rem;
+}
+
+.card{
+  width: 100%;
+  height: min-content;
+  padding:.5rem; 
+  border: .1rem dashed #ccc;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.card .card_image{
+  width: 100%;
+}
+
+.card .card_name{
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: .3rem;
+}
+
+.card .card_title{
+  font-size: 1.2rem;
+  margin-bottom:.5rem;
+}
+
+.users_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile_content {
+  background-color: #ccc;
+  padding: .2rem 1rem;  
+  border-radius: .4rem;
+   height: 3rem;
+   display: flex;
+   align-items: center;
+   gap: .4rem;
+   
+}
+
+.profile_content .profile_name { font-size: .8rem;}
+
+.profile_content img {
+  width: 3rem;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.card_box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.card_photo-p{
+  background-color: #ccc;
+  height: 5rem;
+  width: 5rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.card_box img {
+   height: 100%;
+   transform: translateX(-1rem);
 }
